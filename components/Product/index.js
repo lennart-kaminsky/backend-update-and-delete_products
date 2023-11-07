@@ -41,7 +41,6 @@ export default function Product() {
       method: "DELETE",
     });
     if (response.ok) {
-      await response.json();
       router.push("/");
     } else {
       console.log(response.status);
